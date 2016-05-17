@@ -1,0 +1,22 @@
+PAll.	Program	::=	Stmt;
+
+coercions Exp 11;
+EAdd.	Exp6	::=	Exp6 "+" Exp7;
+ESub.	Exp6	::=	Exp6 "-" Exp7;
+EMul.	Exp7	::=	Exp7 "*" Exp8;
+EMin.	Exp8	::=	"-" Exp9;
+EId.	Exp10	::=	SIdent;
+EInt.	Exp10	::=	Integer;
+
+coercions Stmt 5;
+STwo.	Stmt5	::=	Stmt ";" Stmt;
+SAss.	Stmt3	::=	SIdent "=" Exp;
+SLeft.	Stmt2	::=	"Left";
+SRight.	Stmt2	::=	"Right";
+SIf.	Stmt4	::=	"if" "(" Exp ")" "{" Stmt "}";
+SIfElse.Stmt4	::=	"if" "(" Exp ")" "{" Stmt "}" "else" "{" Stmt "}";
+SSkip.	Stmt2	::=	"skip";
+
+
+token SIdent (lower (letter | digit | '_')* );
+token UIdent (upper (letter | digit | '_')* );

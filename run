@@ -1,0 +1,2 @@
+cd undo/
+runhaskell Inter.hs

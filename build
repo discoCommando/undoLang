@@ -1,0 +1,3 @@
+cd undo/
+bnfc -m -haskell ../undo.cf
+make
