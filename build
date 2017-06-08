@@ -1,3 +1,6 @@
-cd undo/
+if [ ! -d "./undo" ]; then 
+	mkdir undo
+fi
+cd undo
 bnfc -m -haskell ../undo.cf
 make

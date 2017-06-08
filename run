@@ -1,2 +1,1 @@
-cd undo/
-runhaskell Inter.hs
+runhaskell -i"./undo/" Interpreter.hs $1
